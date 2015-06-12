@@ -5,3 +5,23 @@ Internal¶l21Target¶Usigned int16¶0¶Not Historical¶¶¶¶
 Internal¶l21TargetSelected¶Boolean¶0¶Not Historical¶¶¶¶
 Internal¶l21CmbxTargetEnabled¶Boolean¶0¶Not Historical¶¶¶¶
 Internal¶l21BtnSaveSourceTargetEnabled¶Boolean¶0¶Not Historical¶¶¶¶
+Internal¶L21_MODO¶Usigned int16¶0¶Not Historical¶¶¶¶
+Internal¶L21_MODO_AUTO¶Usigned int16¶5¶Not Historical¶¶¶¶
+Internal¶L21_MODO_MANUAL¶Usigned int16¶8¶Not Historical¶¶¶¶
+Internal¶L21_MODO_RESET¶Usigned int16¶4¶Not Historical¶¶¶¶
+Internal¶L21_MODO_INICIO¶Usigned int16¶0¶Not Historical¶¶¶¶
+Internal¶L21_MODO_TRANS_INICIO_RESET¶Usigned int16¶2¶Not Historical¶¶¶¶
+Internal¶L21_MODO_TRANS_RESET_INICIO¶Usigned int16¶3¶Not Historical¶¶¶¶
+Internal¶L21_MODO_TRANS_RESET_AUTO¶Usigned int16¶7¶Not Historical¶¶¶¶
+Internal¶L21_MODO_TRANS_AUTO_RESET¶Usigned int16¶6¶Not Historical¶¶¶¶
+Internal¶L21_MODO_TRANS_RESET_MANUAL¶Usigned int16¶10¶Not Historical¶¶¶¶
+Internal¶L21_MODO_TRANS_MANUAL_RESET¶Usigned int16¶9¶Not Historical¶¶¶¶
+Internal¶L21_SILO_21_MIN¶Usigned int32¶0¶Not Historical¶¶¶¶
+Internal¶L21_SILO_21_MAX¶Usigned int32¶100000¶Not Historical¶¶¶¶
+Internal¶L21_SILO_22_MIN¶Usigned int32¶0¶Not Historical¶¶¶¶
+Internal¶L21_SILO_22_MAX¶Usigned int32¶100000¶Not Historical¶¶¶¶
+Internal¶L21_SILO_34_MIN¶Usigned int32¶0¶Not Historical¶¶¶¶
+Internal¶L21_SILO_34_MAX¶Usigned int32¶100000¶Not Historical¶¶¶¶
+Internal¶L21_CANTIDAD¶Usigned int32¶0¶Not Historical¶¶¶¶
+Internal¶l21TxtCantidad¶Usigned int32¶0¶Not Historical¶¶¶¶
+Internal¶l21NuevaVar¶Usigned int32¶123456¶Not Historical¶¶¶¶
