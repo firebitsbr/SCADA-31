@@ -23,7 +23,10 @@ namespace WinTr
 		public UInt32 L21_SILO_22_MAX;
 		public UInt32 L21_SILO_34_MIN;
 		public UInt32 L21_SILO_34_MAX;
-
+		public UInt32 L21_MIN_TIEMPO_VACIADO;
+		public UInt32 L21_TIEMPO_VACIADO;
+		public UInt32 L21_MIN_TIEMPO_BYPASS;
+		public UInt32 L21_TIEMPO_BYPASS;
 		public void Load()
 		{
 		//------- Script Start Line -------
@@ -55,6 +58,12 @@ namespace WinTr
 			L21_SILO_22_MAX = 100000;
 			L21_SILO_34_MIN = 0;
 			L21_SILO_34_MAX = 100000;
+
+			// TIEMPOS DE VACIADO Y DE BYPASS
+			L21_TIEMPO_VACIADO = 0;
+			L21_MIN_TIEMPO_VACIADO = 5;
+			L21_TIEMPO_BYPASS = 0;
+			L21_MIN_TIEMPO_BYPASS= 10;
 		}
 	}
 }

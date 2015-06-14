@@ -22,6 +22,15 @@ Internal¶L21_SILO_22_MIN¶Usigned int32¶0¶Not Historical¶¶¶¶
 Internal¶L21_SILO_22_MAX¶Usigned int32¶100000¶Not Historical¶¶¶¶
 Internal¶L21_SILO_34_MIN¶Usigned int32¶0¶Not Historical¶¶¶¶
 Internal¶L21_SILO_34_MAX¶Usigned int32¶100000¶Not Historical¶¶¶¶
-Internal¶L21_CANTIDAD¶Usigned int32¶0¶Not Historical¶¶¶¶
+Internal¶L21_CANTIDAD_DESTINO¶Usigned int16¶0¶Not Historical¶¶¶¶
 Internal¶l21TxtCantidad¶Usigned int32¶0¶Not Historical¶¶¶¶
-Internal¶l21NuevaVar¶Usigned int32¶123456¶Not Historical¶¶¶¶
+Internal¶l21NuevaVar¶Usigned int32¶0¶Not Historical¶¶¶¶
+Internal¶L21_TIEMPO_VACIADO¶Usigned int16¶0¶Not Historical¶¶¶¶
+Internal¶L21_TIEMPO_BYPASS¶Usigned int16¶0¶Not Historical¶¶¶¶
+Internal¶L21_PUESTA_EN_MARCHA_COMPLEATA¶Usigned int32¶0¶Not Historical¶¶¶¶
+Internal¶l21TxtTiempoVaciado¶Usigned int16¶0¶Not Historical¶¶¶¶
+Internal¶l21TxtTiempoByPass¶Usigned int16¶0¶Not Historical¶¶¶¶
+Internal¶L21_MIN_TIEMPO_VACIADO¶Usigned int16¶5¶Not Historical¶¶¶¶
+Internal¶L21_MIN_TIEMPO_BYPASS¶Usigned int16¶10¶Not Historical¶¶¶¶
+Internal¶l21FrmPuestaEnMarchaEvent¶Usigned int16¶0¶Not Historical¶¶¶variable para enviar señales al controlador de l21PuestaEnMarch¶
+Internal¶l21FrmPrimeraLineaEvent¶Usigned int16¶0¶Not Historical¶¶¶¶

@@ -1,0 +1,96 @@
+using System;
+using System.IO;
+using System.Windows.Forms;
+using Microsoft.CSharp;
+
+namespace WinTr
+{
+class MainClass
+{
+    public UInt16 L21_MIN_TIEMPO_VACIADO;
+    public UInt16 L21_MIN_TIEMPO_BYPASS;
+    public UInt16 L21_TIEMPO_VACIADO;
+    public UInt16 L21_TIEMPO_BYPASS;
+    public UInt16 l21TxtTiempoVaciado;
+    public UInt16 l21TxtTiempoByPass;
+	public UInt16 l21FrmPuestaEnMarchaEvent;
+	
+	// eventos aceptados por el controlador
+	const UInt16 init = 1;
+	const UInt16 clickBtnAceptar = 2;
+	const UInt16 clickBtnCancelar = 3;
+	const UInt16 close = 99;
+	string caption = "Puesta en Marcha";
+	
+	public void Load()
+	{
+	//------- Script Start Line -------
+		_processEvent(l21FrmPuestaEnMarchaEvent);
+
+	//------- Script End Line -------
+	}
+
+	public int _processEvent(UInt16 e){
+		int result = -1;
+		switch(e){
+			case init:
+				result = onInit();
+				break;
+			case clickBtnAceptar:
+				result = onClickBtnAceptar();
+				break;
+			case clickBtnCancelar:
+				result = onClickBtnCancelar();
+				break;
+			default:
+				result = onDefault();
+				break;
+		}
+
+		return result;
+	}
+	public int onInit(){
+		if(L21_TIEMPO_VACIADO >= L21_MIN_TIEMPO_VACIADO){
+			l21TxtTiempoVaciado = L21_TIEMPO_VACIADO;
+		} else {
+			l21TxtTiempoVaciado = L21_MIN_TIEMPO_VACIADO;
+		}
+
+		if(L21_TIEMPO_BYPASS >= L21_MIN_TIEMPO_BYPASS){
+			l21TxtTiempoByPass = L21_TIEMPO_BYPASS;
+		} else {
+			l21TxtTiempoByPass = L21_MIN_TIEMPO_BYPASS;
+		}
+		
+		return 0;
+	}
+
+	public int onClickBtnAceptar(){
+		MessageBox.Show("Click en aceptar");
+		return 0;
+	}
+
+	public int onClickBtnCancelar(){
+		MessageBox.Show("click en Cancelar");
+		return 0;
+	}
+
+	public int onDefault(){
+		MessageBox.Show("ERROR: NO PUEDO PROCESAR EL EVENTO NUMERO"+l21FrmPuestaEnMarchaEvent,
+			caption,
+			MessageBoxButtons.OK,
+			MessageBoxIcon.Error
+		);
+		return 0;
+	}
+}
+}
+
+
+
+
+
+
+
+
+

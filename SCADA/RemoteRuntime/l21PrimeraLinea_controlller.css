@@ -1,0 +1,66 @@
+using System;
+using System.IO;
+using System.Windows.Forms;
+using Microsoft.CSharp;
+
+namespace WinTr
+{
+class MainClass
+{
+	public void Load()
+	{
+	//------- Script Start	 Line -------
+		_processEvent(l21FrmPrimeraLineaEvent);
+
+	//------- Script End Line -------
+	}
+
+	//========== var for store event to execute  ==========//
+	public UInt16 l21FrmPrimeraLineaEvent; 
+
+	//========== Events Const ==========//
+	const ushort eventInit = 0;
+	const ushort eventClose = 99;
+	const ushort eventClickBtnButton = 1;
+
+	private int _processEvent(ushort e){
+		int result = -1;
+		switch(e){
+			case eventInit:
+				result = onInit();
+				break;
+			case eventClickBtnButton:
+				result = onClickBtnButton();
+				break;
+			case eventClose:
+				result = onClose();
+				break;
+			default:
+				result = onDefault();
+				break;
+		}
+
+		return result;
+	}
+
+	public int onInit(){
+		// TODO init event
+		return 0;
+	}
+
+	public int onClickBtnButton(){
+		// TODO init event
+		return 0;
+	}
+
+	public int onClose(){
+		// TODO init event
+		return 0;
+	}
+
+	public int onDefault(){
+		// TODO init event
+		return 0;
+	}
+}
+}
