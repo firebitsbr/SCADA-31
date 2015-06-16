@@ -7,36 +7,64 @@ namespace WinTr
 {
 class MainClass
 {
+    public Boolean l21BtnPuestaEnMarchaEnabled;
+    public Boolean l21BtnResetEnabled;
+    public Boolean l21BtnManualEnabled;
+    public Boolean l21BtnAutomaticoEnabled;
+
 	public void Load()
 	{
-	//------- Script Start	 Line -------
+	//-----	Script Start Line 	-------
 		_processEvent(l21FrmPrimeraLineaEvent);
-
-	//------- Script End Line -------
+		l21FrmPrimeraLineaEvent = enventDefault;
+	//-----	Script End Line 	-------
 	}
 
 	//========== var for store event to execute  ==========//
 	public UInt16 l21FrmPrimeraLineaEvent; 
 
 	//========== Events Const ==========//
-	const ushort eventInit = 0;
-	const ushort eventClose = 99;
-	const ushort eventClickBtnButton = 1;
+	const UInt16 enventDefault = 0;
+	const UInt16 eventInit = 1;
+	const UInt16 eventClose = 2;
+	const UInt16 eventClickBtnPuestaEnMarcha = 3;
+	const UInt16 eventClickBtnReset = 4;
+	const UInt16 eventClickBtnManual = 5;
+	const UInt16 eventClickBtnAutomatico = 6;
+	const UInt16 eventClickBtnSalvarOrigenDestino = 7;
+	const UInt16 eventClickBtnCancelarOrigenDestino = 8;
+	const UInt16 eventClickBtnInicio = 9;
+	const UInt16 eventClickBtnParada = 10;
+	const UInt16 eventClickBtnParadaInmediata = 11;
+	const UInt16 eventClickBtnContinuar = 12;
+	const UInt16 eventClickBtnProximoSilo = 13;
+	const UInt16 eventClickBtnTerminar = 14;
 
-	private int _processEvent(ushort e){
+	private int _processEvent(UInt16 e){
 		int result = -1;
 		switch(e){
+			case enventDefault:
+				result = onDefault();
+				break;
 			case eventInit:
 				result = onInit();
-				break;
-			case eventClickBtnButton:
-				result = onClickBtnButton();
 				break;
 			case eventClose:
 				result = onClose();
 				break;
+			case eventClickBtnPuestaEnMarcha :
+				result = onClickBtnPuestaEnMarcha();
+				break;
+			case eventClickBtnReset :
+				result = onClickBtnReset();
+				break;
+			case eventClickBtnManual :
+				result = onClickBtnManual();
+				break;
+			case eventClickBtnAutomatico :
+				result = onClickBtnAutomatico();
+				break;
 			default:
-				result = onDefault();
 				break;
 		}
 
@@ -44,11 +72,6 @@ class MainClass
 	}
 
 	public int onInit(){
-		// TODO init event
-		return 0;
-	}
-
-	public int onClickBtnButton(){
 		// TODO init event
 		return 0;
 	}
@@ -62,5 +85,95 @@ class MainClass
 		// TODO init event
 		return 0;
 	}
+
+	//public int onClick(){
+	//	click( );
+	//}
+
+	public int onClickBtnPuestaEnMarcha(){
+		click("puesta en marcha");
+    	l21BtnManualEnabled = true;
+    	l21BtnAutomaticoEnabled = true;
+		return 0;
+	}
+
+	public int onClickBtnReset(){
+		click("Reset");
+		l21BtnManualEnabled = false;
+    	l21BtnAutomaticoEnabled = false;
+		return 0;
+	}
+
+	public int onClickBtnManual(){
+		click("Manual");
+		return 0;
+	}
+
+	public int onClickBtnAutomatico(){
+		click("Automatico");
+		return 0;
+	}
+
+	public int onClickBtnSalvar(){
+		click("Salvar");
+		return 0;
+	}
+
+	public int onClickBtnCancelar(){
+		click("Cancelar");
+		return 0;
+	}
+
+	public int onClickBtnIncio(){
+		click("Inicio");
+		return 0;
+	}
+
+	public int onClickBtnTerminar(){
+		click("Terminar");
+		return 0;
+	}
+
+	public int onClickBtnParada(){
+		click("Parada");
+		return 0;
+	}
+
+	public int onClickBtnParadaInmediata(){
+		click("PArada Inmediata");
+		return 0;
+	}
+
+	public int onClickBtnContinuar(){
+		click("Continuar");
+		return 0;
+	}
+
+	public int onClickBtnProxmimoSilo(){
+		click("Proximo Silo");
+		return 0;
+	}
+
+	public int onClickBtnActivarBypass(){
+		click("Activar Bypass");
+		return 0;
+	}
+
+	public int onClickBtnDesactivarBypass(){
+		click("Desactivar Bypass");
+		return 0;
+	}
+
+	private void click(string c){
+		MessageBox.Show("Click en: "+c);
+	}
 }
 }
+
+
+
+
+
+
+
+

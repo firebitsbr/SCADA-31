@@ -14,8 +14,10 @@ class MainClass
     public UInt16 l21TxtTiempoVaciado;
     public UInt16 l21TxtTiempoByPass;
 	public UInt16 l21FrmPuestaEnMarchaEvent;
+	public string ScreenName;
 	
 	// eventos aceptados por el controlador
+	const UInt16 defaultEvent = 0;
 	const UInt16 init = 1;
 	const UInt16 clickBtnAceptar = 2;
 	const UInt16 clickBtnCancelar = 3;
@@ -25,7 +27,11 @@ class MainClass
 	public void Load()
 	{
 	//------- Script Start Line -------
+		//se procesa el evento de la ventana el cual es pasado en la variable
 		_processEvent(l21FrmPuestaEnMarchaEvent);
+
+		// se resetea el la variable para manejar los eventos
+		l21FrmPuestaEnMarchaEvent = defaultEvent;
 
 	//------- Script End Line -------
 	}
@@ -66,12 +72,39 @@ class MainClass
 	}
 
 	public int onClickBtnAceptar(){
-		MessageBox.Show("Click en aceptar");
+		if(l21TxtTiempoVaciado  < L21_MIN_TIEMPO_VACIADO){
+			showError("El tiempo de vaciado no puede ser menor a "+L21_MIN_TIEMPO_VACIADO+" minutos");
+			return 1;
+		}
+
+		if(l21TxtTiempoByPass < L21_MIN_TIEMPO_BYPASS){
+			showError("El tiempo de Bypass no puede ser menor a "+L21_MIN_TIEMPO_BYPASS+" minutos");
+			return 1;
+		}
+
+		DialogResult result = MessageBox.Show("Desea Configura los parametros a:"
+				+"\n T. Vaciado = "+l21TxtTiempoVaciado
+				+"\n T. Bypass = "+l21TxtTiempoByPass,
+				caption,
+	            MessageBoxButtons.YesNo,
+	            MessageBoxIcon.Question
+	        );
+		
+        if (result == DialogResult.No)
+            Console.WriteLine("NO");
+        else{
+            Console.WriteLine("Yes");
+            L21_TIEMPO_VACIADO = l21TxtTiempoVaciado;
+			L21_TIEMPO_BYPASS = l21TxtTiempoByPass;
+			MessageBox.Show("tiempo Vaciado y Bypass configurados");
+			ScreenName = "Exit Screen";	
+        }
 		return 0;
 	}
 
 	public int onClickBtnCancelar(){
 		MessageBox.Show("click en Cancelar");
+		ScreenName = "Exit Screen";
 		return 0;
 	}
 
@@ -83,8 +116,21 @@ class MainClass
 		);
 		return 0;
 	}
+
+	private void showError(string errorMessage){
+		MessageBox.Show(errorMessage,
+			caption,
+			MessageBoxButtons.OK,
+			MessageBoxIcon.Error
+		);
+	}
 }
 }
+
+
+
+
+
 
 
 
