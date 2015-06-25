@@ -32,10 +32,10 @@
 10¶L21_MIN_TIEMPO_BYPASS¶
 0¶l21FrmPuestaEnMarchaEvent¶
 0¶l21FrmPrimeraLineaEvent¶
-0¶l21BtnPuestaEnMarchaEnabled¶
-0¶l21BtnResetEnabled¶
-1¶l21BtnManualEnabled¶
-1¶l21BtnAutomaticoEnabled¶
+1¶l21BtnPuestaEnMarchaEnabled¶
+1¶l21BtnResetEnabled¶
+0¶l21BtnManualEnabled¶
+0¶l21BtnAutomaticoEnabled¶
 0¶l21BtnInicioEnabled¶
 0¶l21BtnTerminarEnabled¶
 0¶l21BtnParadaEnabled¶
