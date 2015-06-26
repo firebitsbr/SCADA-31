@@ -9,6 +9,7 @@ class MainClass
 {
     public Boolean l21BtnPuestaEnMarchaEnabled;
     public Boolean l21BtnResetEnabled;
+    public Boolean l21BtnLiberarAutManEnabled;
     // public UInt16 L21_MODO_AUTO;
     // public UInt16 L21_MODO_MANUAL;
     // public UInt16 L21_MODO_RESET;
@@ -70,10 +71,12 @@ class MainClass
 
 		l21BtnPuestaEnMarchaEnabled = true;
     	l21BtnResetEnabled = true;
+    	l21BtnLiberarAutManEnabled = true;
 
 	}
 }
 }
+
 
 
 

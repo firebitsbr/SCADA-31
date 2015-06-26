@@ -14,6 +14,7 @@ class MainClass
     public Boolean l21BtnContinuarEnabled;
     public Boolean l21BtnDesactivarBypassEnabled;
     public Boolean l21BtnInicioEnabled;
+    public Boolean l21BtnLiberarAutManEnabled;
     public Boolean l21BtnManualEnabled;
     public Boolean l21BtnParadaEnabled;
     public Boolean l21BtnParadaInmediataEnabled;
@@ -53,6 +54,7 @@ class MainClass
 	const UInt16 eventClickBtnContinuar = 12;
 	const UInt16 eventClickBtnProximoSilo = 13;
 	const UInt16 eventClickBtnTerminar = 14;
+	const UInt16 eventClickBtnLiberarAutMan = 15;
 
 	private int _processEvent(UInt16 e){
 		int result = -1;
@@ -77,6 +79,9 @@ class MainClass
 				break;
 			case eventClickBtnAutomatico :
 				result = onClickBtnAutomatico();
+				break;
+			case eventClickBtnLiberarAutMan :
+				result = onClickBtnLiberarAutMan();
 				break;
 			default:
 				break;
@@ -122,6 +127,7 @@ class MainClass
 
 	public int onClickBtnManual(){
 		click("Manual");
+		desactivarCambioDeModo();
 		desactivarControlesOrigenDestino();
 		desactivarComandosDeLinea();
 		// TODO: enviar comando a PLC a modo de linea manual y confirmar
@@ -130,14 +136,30 @@ class MainClass
 
 	public int onClickBtnAutomatico(){
 		click("Automatico");
+		desactivarCambioDeModo();
 		activarControlesOrigenDestino();
 		desactivarComandosDeLinea();
-		//enviar comando a PLC en mode de linea automatico y confirmar
+		// TODO: enviar comando a PLC en mode de linea automatico y confirmar
+		// se espera que el plc este esperando la configuracion de origen, destino y cantidad
+		return 0;
+	}
+
+	public int onClickBtnLiberarAutMan(){
+		click("Liberar");
+		activarCambioDeModo();
+		desactivarComandosDeLinea();
+		desactivarControlesOrigenDestino();
+		// TODO: enviar comando al PLC liberacion del modo automatico, manual y confirmar
+		// desactiva todos los controles asociados a al modo seleccionado
 		return 0;
 	}
 
 	public int onClickBtnSalvar(){
 		click("Salvar");
+		/*
+		* TODO: guardar la seleccion de origen y destino
+		* enviar seleccion al PLC y espera confirmacion para inciar
+		*/
 		return 0;
 	}
 
@@ -227,8 +249,28 @@ class MainClass
 		l21BtnActivarBypassEnabled = false;
 		l21BtnDesactivarBypassEnabled = false;
 	}
+
+	private void desactivarCambioDeModo(){
+		l21BtnAutomaticoEnabled = false;
+		l21BtnPuestaEnMarchaEnabled = false;
+		l21BtnResetEnabled = false;
+		l21BtnManualEnabled = false;
+		l21BtnLiberarAutManEnabled = true;
+	}
+
+	private void activarCambioDeModo(){
+		l21BtnAutomaticoEnabled = true;
+		l21BtnPuestaEnMarchaEnabled = true;
+		l21BtnResetEnabled = true;
+		l21BtnManualEnabled = true;
+		l21BtnLiberarAutManEnabled = false;
+	}
 }
 }
+
+
+
+
 
 
 
