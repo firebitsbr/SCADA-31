@@ -32,8 +32,8 @@
 10¶L21_MIN_TIEMPO_BYPASS¶
 0¶l21FrmPuestaEnMarchaEvent¶
 0¶l21FrmPrimeraLineaEvent¶
-0¶l21BtnPuestaEnMarchaEnabled¶
-0¶l21BtnResetEnabled¶
+1¶l21BtnPuestaEnMarchaEnabled¶
+1¶l21BtnResetEnabled¶
 0¶l21BtnManualEnabled¶
 0¶l21BtnAutomaticoEnabled¶
 0¶l21BtnInicioEnabled¶
@@ -45,10 +45,10 @@
 0¶l21BtnActivarBypassEnabled¶
 0¶l21BtnDesactivarBypassEnabled¶
 0¶l21CmbxOrigenEnabled¶
-0¶l21CmbxOrigenValue¶
+1¶l21CmbxOrigenValue¶
 0¶l21CmbxDestinoEnabled¶
-0¶l21CmbxDestinoValue¶
+1¶l21CmbxDestinoValue¶
 0¶l21BtnSalvarOrigenDestinoEnabled¶
 0¶l21BtnCancelarOrigenDestinoEnabled¶
-0¶l21TxtCantidadOrigenDestino¶
+13213¶l21TxtCantidadOrigenDestino¶
 0¶l21TxtCantidadOrgDesEnabled¶

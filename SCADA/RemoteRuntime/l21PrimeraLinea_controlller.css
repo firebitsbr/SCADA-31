@@ -7,10 +7,24 @@ namespace WinTr
 {
 class MainClass
 {
-    public Boolean l21BtnPuestaEnMarchaEnabled;
-    public Boolean l21BtnResetEnabled;
-    public Boolean l21BtnManualEnabled;
+    public String ScreenName;
+    public Boolean l21BtnActivarBypassEnabled;
     public Boolean l21BtnAutomaticoEnabled;
+    public Boolean l21BtnCancelarOrigenDestinoEnabled;
+    public Boolean l21BtnContinuarEnabled;
+    public Boolean l21BtnDesactivarBypassEnabled;
+    public Boolean l21BtnInicioEnabled;
+    public Boolean l21BtnManualEnabled;
+    public Boolean l21BtnParadaEnabled;
+    public Boolean l21BtnParadaInmediataEnabled;
+    public Boolean l21BtnPuestaEnMarchaEnabled;
+    public Boolean l21BtnProximoSiloEnabled;
+    public Boolean l21BtnResetEnabled;
+    public Boolean l21BtnSalvarOrigenDestinoEnabled;
+    public Boolean l21BtnTerminarEnabled;
+    public Boolean l21CmbxOrigenEnabled;
+    public Boolean l21CmbxDestinoEnabled;
+    public Boolean l21TxtCantidadOrgDesEnabled;
 
 	public void Load()
 	{
@@ -101,16 +115,24 @@ class MainClass
 		click("Reset");
 		l21BtnManualEnabled = false;
     	l21BtnAutomaticoEnabled = false;
+    	desactivarComandosDeLinea();
+    	desactivarControlesOrigenDestino();
 		return 0;
 	}
 
 	public int onClickBtnManual(){
 		click("Manual");
+		desactivarControlesOrigenDestino();
+		desactivarComandosDeLinea();
+		// TODO: enviar comando a PLC a modo de linea manual y confirmar
 		return 0;
 	}
 
 	public int onClickBtnAutomatico(){
 		click("Automatico");
+		activarControlesOrigenDestino();
+		desactivarComandosDeLinea();
+		//enviar comando a PLC en mode de linea automatico y confirmar
 		return 0;
 	}
 
@@ -167,8 +189,53 @@ class MainClass
 	private void click(string c){
 		MessageBox.Show("Click en: "+c);
 	}
+
+	private void desactivarControlesOrigenDestino(){
+		l21CmbxDestinoEnabled = false;
+		l21CmbxOrigenEnabled = false;
+		l21TxtCantidadOrgDesEnabled = false;
+		l21BtnSalvarOrigenDestinoEnabled = false;
+		l21BtnCancelarOrigenDestinoEnabled = false;
+	}
+
+	private void activarControlesOrigenDestino(){
+		l21CmbxDestinoEnabled = true;
+		l21CmbxOrigenEnabled = true;
+		l21TxtCantidadOrgDesEnabled = true;
+		l21BtnSalvarOrigenDestinoEnabled = true;
+		l21BtnCancelarOrigenDestinoEnabled = true;
+	}
+
+	private void activarComandosDeLinea(){
+		l21BtnInicioEnabled = true;
+		l21BtnTerminarEnabled = true;
+		l21BtnParadaEnabled = true;
+		l21BtnParadaInmediataEnabled = true;
+		l21BtnContinuarEnabled = true;
+		l21BtnProximoSiloEnabled = true;
+		l21BtnActivarBypassEnabled = true;
+		l21BtnDesactivarBypassEnabled = true;
+	}
+
+	private void desactivarComandosDeLinea(){
+		l21BtnInicioEnabled = false;
+		l21BtnTerminarEnabled = false;
+		l21BtnParadaEnabled = false;
+		l21BtnParadaInmediataEnabled = false;
+		l21BtnContinuarEnabled = false;
+		l21BtnProximoSiloEnabled = false;
+		l21BtnActivarBypassEnabled = false;
+		l21BtnDesactivarBypassEnabled = false;
+	}
 }
 }
+
+
+
+
+
+
+
 
 
 

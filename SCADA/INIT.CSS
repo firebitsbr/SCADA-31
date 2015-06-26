@@ -9,29 +9,26 @@ class MainClass
 {
     public Boolean l21BtnPuestaEnMarchaEnabled;
     public Boolean l21BtnResetEnabled;
-    public Boolean l21BtnManualEnabled;
-    public Boolean l21BtnAutomaticoEnabled;
-
-    public UInt16 L21_MODO_AUTO;
-    public UInt16 L21_MODO_MANUAL;
-    public UInt16 L21_MODO_RESET;
-    public UInt16 L21_MODO_INICIO;
-	public UInt16 L21_MODO_TRANS_INICIO_RESET;
-	public UInt16 L21_MODO_TRANS_RESET_INICIO;
-	public UInt16 L21_MODO_TRANS_AUTO_RESET;
-	public UInt16 L21_MODO_TRANS_RESET_AUTO;
-	public UInt16 L21_MODO_TRANS_MANUAL_RESET;
-	public UInt16 L21_MODO_TRANS_RESET_MANUAL;
-	public UInt32 L21_SILO_21_MIN;
-	public UInt32 L21_SILO_21_MAX;
-	public UInt32 L21_SILO_22_MIN;
-	public UInt32 L21_SILO_22_MAX;
-	public UInt32 L21_SILO_34_MIN;
-	public UInt32 L21_SILO_34_MAX;
-	public UInt32 L21_MIN_TIEMPO_VACIADO;
-	public UInt32 L21_TIEMPO_VACIADO;
-	public UInt32 L21_MIN_TIEMPO_BYPASS;
-	public UInt32 L21_TIEMPO_BYPASS;
+    // public UInt16 L21_MODO_AUTO;
+    // public UInt16 L21_MODO_MANUAL;
+    // public UInt16 L21_MODO_RESET;
+    // public UInt16 L21_MODO_INICIO;
+	// public UInt16 L21_MODO_TRANS_INICIO_RESET;
+	// public UInt16 L21_MODO_TRANS_RESET_INICIO;
+	// public UInt16 L21_MODO_TRANS_AUTO_RESET;
+	// public UInt16 L21_MODO_TRANS_RESET_AUTO;
+	// public UInt16 L21_MODO_TRANS_MANUAL_RESET;
+	// public UInt16 L21_MODO_TRANS_RESET_MANUAL;
+	// public UInt32 L21_SILO_21_MIN;
+	// public UInt32 L21_SILO_21_MAX;
+	// public UInt32 L21_SILO_22_MIN;
+	// public UInt32 L21_SILO_22_MAX;
+	// public UInt32 L21_SILO_34_MIN;
+	// public UInt32 L21_SILO_34_MAX;
+	// public UInt32 L21_MIN_TIEMPO_VACIADO;
+	// public UInt32 L21_TIEMPO_VACIADO;
+	// public UInt32 L21_MIN_TIEMPO_BYPASS;
+	// public UInt32 L21_TIEMPO_BYPASS;
 	public void Load()
 	{
 	//------- Script Start Line -------
@@ -41,16 +38,18 @@ class MainClass
 	
 	public void initL21(){
 		// VALORES DE ESTADO DE LA LINEA 21
+		
+		/*
 		L21_MODO_INICIO = 0;
-		L21_MODO_TRANS_INICIO_RESET = 2;
-		L21_MODO_TRANS_RESET_INICIO = 3;
-
 		L21_MODO_RESET = 4;
 		L21_MODO_AUTO = 5;
+		L21_MODO_MANUAL = 8;
+
+		
+		L21_MODO_TRANS_INICIO_RESET = 2;
+		L21_MODO_TRANS_RESET_INICIO = 3;
 		L21_MODO_TRANS_AUTO_RESET = 6;
 		L21_MODO_TRANS_RESET_AUTO = 7;
-
-		L21_MODO_MANUAL = 8;
 		L21_MODO_TRANS_MANUAL_RESET = 9;
 		L21_MODO_TRANS_RESET_MANUAL = 10;
 		
@@ -67,12 +66,19 @@ class MainClass
 		L21_MIN_TIEMPO_VACIADO = 5;
 		L21_TIEMPO_BYPASS = 0;
 		L21_MIN_TIEMPO_BYPASS= 10;
+		*/
 
 		l21BtnPuestaEnMarchaEnabled = true;
     	l21BtnResetEnabled = true;
-    	l21BtnManualEnabled = false;
-    	l21BtnAutomaticoEnabled = false;
 
 	}
 }
 }
+
+
+
+
+
+
+
+
