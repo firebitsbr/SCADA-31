@@ -1,3 +1,15 @@
+Profinet / 1¶CT1_START¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT1_STOP¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT1_CONF_START¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT1_CONF_STOP¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT2_START¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT2_STOP¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT2_CONF_START¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT2_CONF_STOP¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT3_START¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT3_STOP¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT3_CONF_START¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT3_CONF_STOP¶Boolean¶0¶Not Historical¶¶¶¶
 Internal¶l21Source¶Usigned int16¶0¶Not Historical¶¶¶¶
 Internal¶l21SourceSelected¶Boolean¶0¶Not Historical¶¶¶¶
 Internal¶l21CmbxSourceEnabled¶Boolean¶0¶Not Historical¶¶¶¶
@@ -32,8 +44,8 @@ Internal¶L21_MIN_TIEMPO_VACIADO¶Usigned int16¶5¶Not Historical¶¶¶minimo tiempo d
 Internal¶L21_MIN_TIEMPO_BYPASS¶Usigned int16¶10¶Not Historical¶¶¶minimo tiempo de bypass para la linea 21¶
 Internal¶l21FrmPuestaEnMarchaEvent¶Usigned int16¶0¶Not Historical¶¶¶variable para enviar señales al controlador de l21PuestaEnMarch¶
 Internal¶l21FrmPrimeraLineaEvent¶Usigned int16¶0¶Not Historical¶¶¶almacena el evento a ejecutar en l21PrimeraLimpia¶
-Internal¶l21BtnPuestaEnMarchaEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de puesta en marcha de la L21¶
-Internal¶l21BtnResetEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de RESET en L21¶
+Internal¶l21BtnPuestaEnMarchaEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el boton de puesta en marcha de la L21¶
+Internal¶l21BtnResetEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el boton de RESET en L21¶
 Internal¶l21BtnManualEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de MANUAL en L21¶
 Internal¶l21BtnAutomaticoEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de AUTOMATICO en L21¶
 Internal¶l21BtnLiberarAutManEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el boton de LIBERAR AUTO/MAN¶

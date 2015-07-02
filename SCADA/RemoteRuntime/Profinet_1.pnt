@@ -1,0 +1,15 @@
+D¶0¶0¶0¶0¶1¶1¶
+A¶S7300-CPU315-32-PN/DP,192.168.1.80,102,100,0,5000
+B¶Group 1'Cycle 1
+Tag¶¶Group 1¶Cycle 1¶M 0.0¶CT1_START¶Boolean¶False¶False¶1
+Tag¶¶Group 1¶Cycle 1¶M 0.1¶CT1_STOP¶Boolean¶False¶False¶1
+Tag¶¶Group 1¶Cycle 1¶M 0.2¶CT1_CONF_START¶Boolean¶False¶False¶1
+Tag¶¶Group 1¶Cycle 1¶M 0.3¶CT1_CONF_STOP¶Boolean¶False¶False¶1
+Tag¶¶Group 1¶Cycle 1¶M 0.4¶CT2_START¶Boolean¶False¶False¶1
+Tag¶¶Group 1¶Cycle 1¶M 0.5¶CT2_STOP¶Boolean¶False¶False¶1
+Tag¶¶Group 1¶Cycle 1¶M 0.6¶CT2_CONF_START¶Boolean¶False¶False¶1
+Tag¶¶Group 1¶Cycle 1¶M 0.7¶CT2_CONF_STOP¶Boolean¶False¶False¶1
+Tag¶¶Group 1¶Cycle 1¶M 1.1¶CT3_START¶Boolean¶False¶False¶1
+Tag¶¶Group 1¶Cycle 1¶M 1.2¶CT3_STOP¶Boolean¶False¶False¶1
+Tag¶¶Group 1¶Cycle 1¶M 1.3¶CT3_CONF_START¶Boolean¶False¶False¶1
+Tag¶¶Group 1¶Cycle 1¶M 1.4¶CT3_CONF_STOP¶Boolean¶False¶False¶1
