@@ -1,3 +1,15 @@
+Profinet / 1¶CT1_START¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT1_STOP¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT1_CONF_START¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT1_CONF_STOP¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT2_START¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT2_STOP¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT2_CONF_START¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT2_CONF_STOP¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT3_START¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT3_STOP¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT3_CONF_START¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶CT3_CONF_STOP¶Boolean¶0¶Not Historical¶¶¶¶
 Internal¶l21Source¶Usigned int16¶0¶Not Historical¶¶¶¶
 Internal¶l21SourceSelected¶Boolean¶0¶Not Historical¶¶¶¶
 Internal¶l21CmbxSourceEnabled¶Boolean¶0¶Not Historical¶¶¶¶
@@ -34,8 +46,8 @@ Internal¶l21FrmPuestaEnMarchaEvent¶Usigned int16¶0¶Not Historical¶¶¶variable par
 Internal¶l21FrmPrimeraLineaEvent¶Usigned int16¶0¶Not Historical¶¶¶almacena el evento a ejecutar en l21PrimeraLimpia¶
 Internal¶l21BtnPuestaEnMarchaEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el boton de puesta en marcha de la L21¶
 Internal¶l21BtnResetEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el boton de RESET en L21¶
-Internal¶l21BtnManualEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el boton de MANUAL en L21¶
-Internal¶l21BtnAutomaticoEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el boton de AUTOMATICO en L21¶
+Internal¶l21BtnManualEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de MANUAL en L21¶
+Internal¶l21BtnAutomaticoEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de AUTOMATICO en L21¶
 Internal¶l21BtnLiberarAutManEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el boton de LIBERAR AUTO/MAN¶
 Internal¶l21BtnInicioEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de INICION en L21¶
 Internal¶l21BtnTerminarEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de TERMINAR en L21¶
@@ -45,11 +57,11 @@ Internal¶l21BtnContinuarEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el
 Internal¶l21BtnProximoSiloEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de PROXIMO SILO en L21¶
 Internal¶l21BtnActivarBypassEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de ACTIVAR BYPASS en L21¶
 Internal¶l21BtnDesactivarBypassEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de DESACTIVAR BYPASS en L21¶
-Internal¶l21CmbxOrigenEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el combobox de Origen en L21¶
+Internal¶l21CmbxOrigenEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el combobox de Origen en L21¶
 Internal¶l21CmbxOrigenValue¶Usigned int16¶1¶Not Historical¶¶¶valor seleccionado en combobox de Origen en L21¶
-Internal¶l21CmbxDestinoEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el combobox de Destino en L21¶
+Internal¶l21CmbxDestinoEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el combobox de Destino en L21¶
 Internal¶l21CmbxDestinoValue¶Usigned int16¶1¶Not Historical¶¶¶valor seleccionado en combobox de Destino en L21¶
-Internal¶l21BtnSalvarOrigenDestinoEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de SALVAR en L21¶
-Internal¶l21BtnCancelarOrigenDestinoEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva el boton de SALVAR en L21¶
+Internal¶l21BtnSalvarOrigenDestinoEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el boton de SALVAR en L21¶
+Internal¶l21BtnCancelarOrigenDestinoEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el boton de SALVAR en L21¶
 Internal¶l21TxtCantidadOrigenDestino¶Usigned int32¶13213¶Not Historical¶¶¶valor del textbox Cantidad en L21¶
-Internal¶l21TxtCantidadOrgDesEnabled¶Boolean¶0¶Not Historical¶¶¶activa o desactiva textbox Cantidad en L21¶
+Internal¶l21TxtCantidadOrgDesEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva textbox Cantidad en L21¶

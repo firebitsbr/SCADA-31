@@ -1,0 +1,41 @@
+<Chart Palette="Dundas" BackColor="" BackGradientEndColor="White" BorderLineColor="26, 59, 105" BorderLineStyle="Solid" BuildNumber="7.0.0.1782" AlwaysRecreateHotregions="True">
+  <Series>
+    <Series Name="Series1" XValueType="DateTime" ValueMemberX="DateTime" ValueMembersY="NotSet" YValueType="Double" PaletteCustomColors="" ShadowOffset="2" ChartType="Line" ShowLabelAsValue="True" BorderColor="26, 59, 105" BorderWidth="2" CustomAttributes="EmptyPointValue=Average">
+      <EmptyPointStyle BorderWidth="2" />
+    </Series>
+  </Series>
+  <Legends>
+    <Legend Name="Default" AutoFitText="False" BackColor="White" BorderColor="26, 59, 105" Alignment="Center" ShadowOffset="2" Title="Legend" TitleFont="Trebuchet MS, 8pt, style=Bold, Underline">
+    </Legend>
+  </Legends>
+  <Titles>
+    <Title Name="Title1" Text="Humedad en el Trigo" Font="Arial Narrow, 14.25pt, style=Bold, GdiCharSet=0">
+    </Title>
+  </Titles>
+  <ChartAreas>
+    <ChartArea Name="Default" BackColor="White" BorderColor="26, 59, 105" ShadowOffset="2" BorderStyle="Solid">
+      <CursorX UserEnabled="True" Position="40018.62773148148" SelectionStart="40018.62773148148" SelectionEnd="40018.62773148148" UserSelection="True" />
+      <CursorY UserEnabled="True" UserSelection="True" />
+      <AxisY LabelsAutoFit="False" Title="Humedad" TitleFont="Microsoft Sans Serif, 14.25pt, style=Bold, GdiCharSet=0">
+        <MajorGrid LineColor="Silver" />
+        <MinorGrid LineColor="Silver" />
+      </AxisY>
+      <AxisX Title="Tiempo" TitleFont="Microsoft Sans Serif, 14.25pt, style=Bold, GdiCharSet=0" Maximum="40019.62773148148" Minimum="40019.627604166664">
+        <MajorGrid LineColor="Silver" />
+        <MinorGrid LineColor="Silver" />
+        <LabelStyle Format="t" />
+        <View Position="40018.627731480483" Size="1E-09" SizeType="Number" />
+      </AxisX>
+      <AxisX2>
+        <MajorGrid LineColor="Silver" />
+        <MinorGrid LineColor="Silver" />
+      </AxisX2>
+      <AxisY2>
+        <MajorGrid LineColor="Silver" />
+        <MinorGrid LineColor="Silver" />
+      </AxisY2>
+      <Area3DStyle WallWidth="0" />
+    </ChartArea>
+  </ChartAreas>
+  <BorderSkin PageColor="AliceBlue" FrameBackColor="CornflowerBlue" FrameBackGradientEndColor="CornflowerBlue" />
+</Chart>
