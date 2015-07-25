@@ -1,4 +1,4 @@
-D¶0¶0¶0¶0¶1¶1¶
+D¶0¶1¶1¶1¶1¶1¶
 A¶S7300-CPU315-32-PN/DP,192.168.0.1,102,100,0,5000
 B¶Group 1'Cycle 1
 Tag¶¶Group 1¶Cycle 1¶M 0.0¶CT1_START¶Boolean¶False¶¶1
@@ -14,7 +14,7 @@ Tag¶¶Group 1¶Cycle 1¶M 1.1¶CT3_STOP¶Boolean¶False¶¶1
 Tag¶¶Group 1¶Cycle 1¶M 1.2¶CT3_CONF_START¶Boolean¶False¶¶1
 Tag¶¶Group 1¶Cycle 1¶M 1.3¶L21_MODO_CONFIGURACION¶Boolean¶False¶¶1
 Tag¶¶Group 1¶Cycle 1¶M 1.4¶L21_MODO_AUTOMATICO¶Boolean¶False¶¶1
-Tag¶¶Group 1¶Cycle 1¶M 1.5¶L21_MODO_MANUA¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 1.5¶L21_MODO_MANUAL¶Boolean¶False¶¶1
 Tag¶¶Group 1¶Cycle 1¶M 1.6¶L21_LIBERAR_AUTO_MAN¶Boolean¶False¶¶1
 Tag¶¶Group 1¶Cycle 1¶M 1.7¶L21_RESET¶Boolean¶False¶¶1
 Tag¶¶Group 1¶Cycle 1¶M 2.0¶L21_PUESTA_EN_MARCHA¶Boolean¶False¶¶1
@@ -329,3 +329,33 @@ Tag¶¶Group 1¶Cycle 1¶MW 52¶L21_TOTAL_AGUA_DOSIFICADA¶Usigned int16¶0¶¶2
 Tag¶¶Group 1¶Cycle 1¶MW 54¶L21_BASCULA_CANT_TRIGO_PESADO¶Usigned int16¶0¶¶2
 Tag¶¶Group 1¶Cycle 1¶MW 56¶L21_MYFC_CANTIDAD_HUMEDAD¶Usigned int16¶0¶¶2
 Tag¶¶Group 1¶Cycle 1¶MW 58¶L21_MOZF_CANTIDAD_AGUA¶Usigned int16¶0¶¶2
+Tag¶¶Group 1¶Cycle 1¶M 60.1¶L22_MODO_CONFIGURACION¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 60.2¶L22_MODO_AUTOMATICO¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 60.3¶L22_MODO_MANUAL¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 60.4¶L22_LIBERAR_AUTO_MAN¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 60.5¶L22_RESET¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 60.6¶L22_PUESTA_EN_MARCHA¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 60.7¶L22_ORG_SILO_21¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 61.0¶L22_ORG_SILO_22¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 61.1¶L22_ORG_SILO_31¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶MB 62¶L22_FLUJO_SILO_21¶Usigned int8¶0¶¶1
+Tag¶¶Group 1¶Cycle 1¶MB 63¶L22_FLUJO_SILO_22¶Usigned int8¶0¶¶1
+Tag¶¶Group 1¶Cycle 1¶MB 64¶L22_FLUJO_SILO_31¶Usigned int8¶0¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 65.0¶L22_DES_SILO_32¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 65.1¶L22_DES_SILO_33¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 65.2¶L22_DES_SILO_34¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 65.3¶L22_DES_SILO_35¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 65.4¶L22_DES_SILO_36¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 65.5¶L22_DES_SILO_37¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 65.6¶L22_DES_SILO_38¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 65.7¶L22_DES_SILO_39¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 66.0¶L22_SALVAR_ORG_DES¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 66.1¶L22_CANCEL_ORG_DES¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 66.2¶L22_INCIO¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 66.3¶L22_PARADA¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 66.4¶L22_CONTINUAR¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 66.5¶L22_PARADA_INMEDIATA¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 66.6¶L22_PROXIMO_SILO¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 66.7¶L22_ACT_BYPASS¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 67.0¶L22_DACT_BYPASS¶Boolean¶False¶¶1
+Tag¶¶Group 1¶Cycle 1¶M 67.1¶L22_CONF_MODO_CONFIGURACION¶Boolean¶False¶¶1

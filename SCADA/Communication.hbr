@@ -11,7 +11,7 @@ Profinet / 1¶CT3_STOP¶Boolean¶0¶Not Historical¶¶¶¶
 Profinet / 1¶CT3_CONF_START¶Boolean¶0¶Not Historical¶¶¶¶
 Profinet / 1¶L21_MODO_CONFIGURACION¶Boolean¶0¶Not Historical¶¶¶¶
 Profinet / 1¶L21_MODO_AUTOMATICO¶Boolean¶0¶Not Historical¶¶¶¶
-Profinet / 1¶L21_MODO_MANUA¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L21_MODO_MANUAL¶Boolean¶0¶Not Historical¶¶¶¶
 Profinet / 1¶L21_LIBERAR_AUTO_MAN¶Boolean¶0¶Not Historical¶¶¶¶
 Profinet / 1¶L21_RESET¶Boolean¶0¶Not Historical¶¶¶¶
 Profinet / 1¶L21_PUESTA_EN_MARCHA¶Boolean¶0¶Not Historical¶¶¶¶
@@ -326,6 +326,36 @@ Profinet / 1¶L21_TOTAL_AGUA_DOSIFICADA¶Usigned int16¶0¶Not Historical¶¶¶¶
 Profinet / 1¶L21_BASCULA_CANT_TRIGO_PESADO¶Usigned int16¶0¶Not Historical¶¶¶¶
 Profinet / 1¶L21_MYFC_CANTIDAD_HUMEDAD¶Usigned int16¶0¶Not Historical¶¶¶¶
 Profinet / 1¶L21_MOZF_CANTIDAD_AGUA¶Usigned int16¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_MODO_CONFIGURACION¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_MODO_AUTOMATICO¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_MODO_MANUAL¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_LIBERAR_AUTO_MAN¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_RESET¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_PUESTA_EN_MARCHA¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_ORG_SILO_21¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_ORG_SILO_22¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_ORG_SILO_31¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_FLUJO_SILO_21¶Usigned int16¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_FLUJO_SILO_22¶Usigned int16¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_FLUJO_SILO_31¶Usigned int16¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_DES_SILO_32¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_DES_SILO_33¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_DES_SILO_34¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_DES_SILO_35¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_DES_SILO_36¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_DES_SILO_37¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_DES_SILO_38¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_DES_SILO_39¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_SALVAR_ORG_DES¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_CANCEL_ORG_DES¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_INCIO¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_PARADA¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_CONTINUAR¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_PARADA_INMEDIATA¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_PROXIMO_SILO¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_ACT_BYPASS¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_DACT_BYPASS¶Boolean¶0¶Not Historical¶¶¶¶
+Profinet / 1¶L22_CONF_MODO_CONFIGURACION¶Boolean¶0¶Not Historical¶¶¶¶
 Internal¶l21Source¶Usigned int16¶0¶Not Historical¶¶¶¶
 Internal¶l21SourceSelected¶Boolean¶0¶Not Historical¶¶¶¶
 Internal¶l21CmbxSourceEnabled¶Boolean¶0¶Not Historical¶¶¶¶
@@ -333,31 +363,8 @@ Internal¶l21Target¶Usigned int16¶0¶Not Historical¶¶¶¶
 Internal¶l21TargetSelected¶Boolean¶0¶Not Historical¶¶¶¶
 Internal¶l21CmbxTargetEnabled¶Boolean¶0¶Not Historical¶¶¶¶
 Internal¶l21BtnSaveSourceTargetEnabled¶Boolean¶0¶Not Historical¶¶¶¶
-Internal¶L21_MODO¶Usigned int16¶0¶Not Historical¶¶¶modo actual de la linea 21¶
-Internal¶L21_MODO_AUTO¶Usigned int16¶5¶Not Historical¶¶¶valor del modo automatico de la linea 21¶
-Internal¶L21_MODO_MANUAL¶Usigned int16¶8¶Not Historical¶¶¶valor del modo manual de la linea 21¶
-Internal¶L21_MODO_RESET¶Usigned int16¶4¶Not Historical¶¶¶valor del modo reset de la linea 21¶
-Internal¶L21_MODO_INICIO¶Usigned int16¶0¶Not Historical¶¶¶valor del modo inicio de la linea 21¶
-Internal¶L21_MODO_TRANS_INICIO_RESET¶Usigned int16¶2¶Not Historical¶¶¶valor del modo transicion inicio-reset de la linea 21¶
-Internal¶L21_MODO_TRANS_RESET_INICIO¶Usigned int16¶3¶Not Historical¶¶¶valor del modo transicion reset-incio de la linea 21¶
-Internal¶L21_MODO_TRANS_RESET_AUTO¶Usigned int16¶7¶Not Historical¶¶¶valor del modo transicion reset-auto de la linea 21¶
-Internal¶L21_MODO_TRANS_AUTO_RESET¶Usigned int16¶6¶Not Historical¶¶¶valor del modo transicion auto-reset de la linea 21¶
-Internal¶L21_MODO_TRANS_RESET_MANUAL¶Usigned int16¶10¶Not Historical¶¶¶valor del modo transicion reset-manual de la linea 21¶
-Internal¶L21_MODO_TRANS_MANUAL_RESET¶Usigned int16¶9¶Not Historical¶¶¶valor del modo transicion manual-reset de la linea 21¶
-Internal¶L21_SILO_21_MIN¶Usigned int32¶0¶Not Historical¶¶¶minimo valor de trigo en l silo 21¶
-Internal¶L21_SILO_21_MAX¶Usigned int32¶100000¶Not Historical¶¶¶maximo valor de trigo en el silo 21¶
-Internal¶L21_SILO_22_MIN¶Usigned int32¶0¶Not Historical¶¶¶minimo valor de trgo en el silo 22¶
-Internal¶L21_SILO_22_MAX¶Usigned int32¶100000¶Not Historical¶¶¶maximo valor de trigo en el silo 22¶
-Internal¶L21_SILO_34_MIN¶Usigned int32¶0¶Not Historical¶¶¶minimo valor de trigo en el silo 34¶
-Internal¶L21_SILO_34_MAX¶Usigned int32¶100000¶Not Historical¶¶¶maximo vaor de trigo en el silo 34¶
-Internal¶L21_CANTIDAD_DESTINO¶Usigned int16¶0¶Not Historical¶¶¶valor a tranferir en el silo de destino de la linea 21¶
-Internal¶L21_TIEMPO_VACIADO¶Usigned int16¶10¶Not Historical¶¶¶tiempo de vaciado para la linea 21¶
-Internal¶L21_TIEMPO_BYPASS¶Usigned int16¶10¶Not Historical¶¶¶timepo de bypass para la linea 21¶
-Internal¶L21_PUESTA_EN_MARCHA_COMPLEATA¶Boolean¶0¶Not Historical¶¶¶flag de puesta en marcha linea 21 completa¶
 Internal¶l21TxtTiempoVaciado¶Usigned int16¶10¶Not Historical¶¶¶valor textbox tiempo de vaciado en puesta en marcha linea 21¶
 Internal¶l21TxtTiempoByPass¶Usigned int16¶10¶Not Historical¶¶¶valor textbox tiempo de bypass en puesta en marcha linea 21¶
-Internal¶L21_MIN_TIEMPO_VACIADO¶Usigned int16¶5¶Not Historical¶¶¶minimo tiempo de vaciado/limpieaza para la linea 21¶
-Internal¶L21_MIN_TIEMPO_BYPASS¶Usigned int16¶10¶Not Historical¶¶¶minimo tiempo de bypass para la linea 21¶
 Internal¶l21FrmPuestaEnMarchaEvent¶Usigned int16¶0¶Not Historical¶¶¶variable para enviar señales al controlador de l21PuestaEnMarch¶
 Internal¶l21FrmPrimeraLineaEvent¶Usigned int16¶0¶Not Historical¶¶¶almacena el evento a ejecutar en l21PrimeraLimpia¶
 Internal¶l21BtnPuestaEnMarchaEnabled¶Boolean¶1¶Not Historical¶¶¶activa o desactiva el boton de puesta en marcha de la L21¶
